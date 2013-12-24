@@ -68,7 +68,6 @@ public class UtopiaCoPilot implements IRCEventListener {
      * to a more specific type.
      */
     public void receiveEvent(IRCEvent e) {
-        event = e;
         if (!tabList.containsKey(e.getSession().toString())) {
             serverName = e.getSession().toString();
             jPaneladd = new javax.swing.JPanel();
